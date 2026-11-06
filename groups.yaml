@@ -1,7 +1,7 @@
 groups:
   G1:
     name: RC reproduction
-    version: 6.7.52
+    version: "6.7.53-rc.1"
     members:
     - release-review-dtk-20261106-073925
   G2:
