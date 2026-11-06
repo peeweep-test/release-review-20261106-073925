@@ -6,7 +6,7 @@ groups:
     - release-review-dtk-20261106-073925
   G2:
     name: Recovery and status reproduction
-    version: 6.0.49
+    version: "6.0.50"
     members:
     - release-review-go-a-20261106-073925
     - release-review-go-b-20261106-073925
