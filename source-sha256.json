@@ -1,0 +1,7 @@
+{
+  "/home/ut006484@uos/Desktop/dde-version/dde/.github/workflows/release-group.yml": "542cbf50dc5abb486ef89f31beb53012a210663cc2895fb10fa872e3b2b5a59f",
+  "/home/ut006484@uos/Desktop/dde-version/dde/.github/workflows/sync-baseline.yml": "94a2cf05b1990851feaa47a41a8f002f17d2675e78636d80bc14143fd71a5991",
+  "/home/ut006484@uos/Desktop/dde-version/.github@verify-group-version/.github/workflows/verify-group-version.yml": "439ca736dfff54ef6536fabdb8ab24883728113fd87728e9918f1a511c668c58",
+  "/home/ut006484@uos/Desktop/dde-version/.github@verify-group-version/.github/workflows/update-changelog.yml": "e6454014eca119906ce26f793ddb90a1d5e7c84a4efec680545ab41346ea19ce",
+  "/home/ut006484@uos/Desktop/dde-version/.github@verify-group-version/.github/workflows/auto-release.yml": "9e5e2ccd74a454b3e74f84dffdce7a6cc2be53dc862530d699fd7814becc0d50"
+}

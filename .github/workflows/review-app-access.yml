@@ -1,0 +1,23 @@
+name: Review App access
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/create-github-app-token@v3
+        id: app
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+          permission-actions: read
+          permission-contents: write
+          permission-pull-requests: write
+          permission-statuses: write
+      - name: Verify repository access
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: gh api "repos/$GITHUB_REPOSITORY" --jq '{full_name, permissions}'
