@@ -1,0 +1,161 @@
+{
+  "completed_at": "2026-11-06T08:09:11.651868+00:00",
+  "repos": {
+    "controller": "peeweep-test/release-review-20261106-073925",
+    "go_a": "peeweep-test/release-review-go-a-20261106-073925",
+    "go_b": "peeweep-test/release-review-go-b-20261106-073925",
+    "dtk": "peeweep-test/release-review-dtk-20261106-073925"
+  },
+  "source_files_unchanged_during_test": true,
+  "shared_sha_status": {
+    "head_sha": "b995756b1b30260bc4b8b1c3e47b0c0787c3ad8c",
+    "wrong_pr": "https://github.com/peeweep-test/release-review-go-a-20261106-073925/pull/2",
+    "failed_guard_run": "https://github.com/peeweep-test/release-review-go-a-20261106-073925/actions/runs/42183780719",
+    "successful_guard_rerun": "https://github.com/peeweep-test/release-review-go-a-20261106-073925/actions/runs/42183649360/attempts/2",
+    "blocked": {
+      "status": {
+        "state": "failure",
+        "context": "group-version-guard",
+        "target_url": "https://github.com/peeweep-test/release-review-go-a-20261106-073925/actions/runs/42183780719",
+        "created_at": "2026-11-06T07:53:05Z"
+      },
+      "strict": true,
+      "required_checks": [
+        {
+          "context": "group-version-guard",
+          "app_id": 15368
+        }
+      ],
+      "enforce_admins": true,
+      "response": {
+        "message": "Required status check \"group-version-guard\" is failing.",
+        "documentation_url": "https://docs.github.com/articles/about-protected-branches",
+        "status": "405"
+      },
+      "gh_exit_code": 1
+    },
+    "allowed": {
+      "status": {
+        "state": "success",
+        "context": "group-version-guard",
+        "target_url": "https://github.com/peeweep-test/release-review-go-a-20261106-073925/actions/runs/42183649360",
+        "created_at": "2026-11-06T07:55:17Z"
+      },
+      "strict": true,
+      "required_checks": [
+        {
+          "context": "group-version-guard",
+          "app_id": 15368
+        }
+      ],
+      "enforce_admins": true,
+      "response": {
+        "sha": "7a3823c511547b1997938ca1a4cea1b9e0008aa7",
+        "merged": true,
+        "message": "Pull Request successfully merged"
+      },
+      "gh_exit_code": 0
+    }
+  },
+  "distribution_recovery": {
+    "initial_run": {
+      "repo": "peeweep-test/release-review-20261106-073925",
+      "workflow": "release-group.yml",
+      "inputs": {
+        "group": "G2",
+        "version": "6.0.50",
+        "name": "Release Review",
+        "email": "release-review@example.invalid",
+        "dry_run": "false",
+        "base_branch": "review/allowed",
+        "distribution": "stable"
+      },
+      "ref": "main",
+      "prior_ids": [
+        42183443217
+      ],
+      "dispatch_response": null,
+      "id": 42183505658,
+      "html_url": "https://github.com/peeweep-test/release-review-20261106-073925/actions/runs/42183505658"
+    },
+    "recovery_run": {
+      "repo": "peeweep-test/release-review-20261106-073925",
+      "workflow": "release-group.yml",
+      "inputs": {
+        "group": "G2",
+        "version": "6.0.50",
+        "name": "Release Review",
+        "email": "release-review@example.invalid",
+        "dry_run": "false"
+      },
+      "ref": "main",
+      "prior_ids": [
+        42183505658,
+        42183443217
+      ],
+      "dispatch_response": null,
+      "id": 42184405434,
+      "html_url": "https://github.com/peeweep-test/release-review-20261106-073925/actions/runs/42184405434"
+    },
+    "members": [
+      {
+        "repo": "peeweep-test/release-review-go-a-20261106-073925",
+        "pr": "https://github.com/peeweep-test/release-review-go-a-20261106-073925/pull/1",
+        "version": "6.0.50",
+        "distribution": "stable",
+        "changelog_first_line": "release-review-go-a-20261106-073925 (6.0.50) stable; urgency=medium"
+      },
+      {
+        "repo": "peeweep-test/release-review-go-b-20261106-073925",
+        "pr": "https://github.com/peeweep-test/release-review-go-b-20261106-073925/pull/1",
+        "version": "6.0.50",
+        "distribution": "unstable",
+        "changelog_first_line": "release-review-go-b-20261106-073925 (6.0.50) unstable; urgency=medium"
+      }
+    ],
+    "baseline_pr": "https://github.com/peeweep-test/release-review-20261106-073925/pull/2",
+    "baseline_status": "success"
+  },
+  "rc_to_final": {
+    "rc_start_run": {
+      "repo": "peeweep-test/release-review-20261106-073925",
+      "workflow": "release-group.yml",
+      "inputs": {
+        "group": "G1",
+        "version": "6.7.53-rc.1",
+        "name": "Release Review",
+        "email": "release-review@example.invalid",
+        "dry_run": "false"
+      },
+      "ref": "main",
+      "prior_ids": [],
+      "dispatch_response": null,
+      "id": 42183443217,
+      "html_url": "https://github.com/peeweep-test/release-review-20261106-073925/actions/runs/42183443217"
+    },
+    "member_pr": "https://github.com/peeweep-test/release-review-dtk-20261106-073925/pull/1",
+    "baseline_pr": "https://github.com/peeweep-test/release-review-20261106-073925/pull/1",
+    "final_run": {
+      "repo": "peeweep-test/release-review-20261106-073925",
+      "workflow": "release-group.yml",
+      "inputs": {
+        "group": "G1",
+        "version": "6.7.53",
+        "name": "Release Review",
+        "email": "release-review@example.invalid",
+        "dry_run": "false"
+      },
+      "ref": "main",
+      "prior_ids": [
+        42184405434,
+        42183505658,
+        42183443217
+      ],
+      "dispatch_response": null,
+      "id": 42184793295,
+      "html_url": "https://github.com/peeweep-test/release-review-20261106-073925/actions/runs/42184793295"
+    },
+    "conclusion": "failure",
+    "error": "RuntimeError: 6.7.53 必须大于 G1 基线 6.7.53-rc.1"
+  }
+}
